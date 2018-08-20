@@ -1,0 +1,43 @@
+.text {
+  font-family: "karla", sans-serif;
+}
+
+.headline {
+  font-family: "Space Mono", monospace;
+}
+
+.bs-sectionbreak {
+  height: 20px;
+}
+
+.bs-linebreak {
+  height: 10px;
+}
+
+.bs-projectbreak {
+  height: 40px;
+}
+
+nav {
+  background-color: white;
+}
+
+body {
+  padding-top: 50px;
+}
+
+.anchor {
+  border-top: 50px solid transparent;
+  margin-top: -50px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+
+.landing-col {
+  background-image: url("../images/untitled_1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding: 0px;
+}
