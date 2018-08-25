@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- node
+deploy:
+  provider: s3
+  access_key_id: AKIAIEA25JB2OB2U6XSQ
+  secret_access_key:
+    secure: $SECRETACCESSKEY
+  bucket: www.nathanielgrossman.website
+  acl: public_read
+  region: us-west-1
