@@ -41,3 +41,7 @@ body {
   height: 100vh;
   padding: 0px;
 }
+
+.welcome:hover {
+    text-decoration: none;
+}
