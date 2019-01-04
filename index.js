@@ -28,8 +28,8 @@ function invert(rgb, bw) {
     return `rgb(${inverted.join(', ')})`
 }
 
-function parseRGB(rgba) {
-  let channels = rgb.substring(4, rgb.length - 1).split(", ").map(channel => parseInt(channel))
+function parseRGB(rgb) {
+  let channels = rgb.substring(4, rgb.length - 1).split(", ")
     let a = channels.pop();
     return `rgb(${channels.join(', ')})`
 }
