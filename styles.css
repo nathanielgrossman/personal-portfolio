@@ -108,4 +108,9 @@ a {
         grid-template-rows: 1fr;
     }
 
+    .picture {
+    max-width: 100px;
+    max-height: 100px;
+}
+
 }
