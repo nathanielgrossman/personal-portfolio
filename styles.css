@@ -22,12 +22,20 @@ a {
     transition: color .5s linear;
 }
 
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .picture {
-    display: block;
-    max-width: 600px;
-    max-height: 600px;
-    width: auto;
-    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.pic {
+  height: 100%;
+  width: 100%;
 }
 
 .linklt {
@@ -67,18 +75,10 @@ a {
     padding: 30px;
 }
 
-#right {
-    grid-area: margin;
-    display: grid;
-    grid-template-columns: 1fr 600px 1fr;
-    grid-template-rows: 1fr 600px 1fr;
-}
 
-#image {
-    justify-items: center;
-    grid-area: margin;
-    grid-column: 2;
-    grid-row: 2;
+#image-box {
+    width: 600px;
+    height: 600px;
 }
 
 
@@ -103,14 +103,11 @@ a {
 
     #right {
         visibility: hidden;
-        grid-area: margin;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
     }
 
     .picture {
-    max-width: 100px;
-    max-height: 100px;
-}
+        max-width: 100px;
+        max-height: 100px;
+    }
 
 }
