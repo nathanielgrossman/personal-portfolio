@@ -1,7 +1,7 @@
 axios.get('https://kboykyzml8.execute-api.us-west-2.amazonaws.com/prod/get-random-18a58t9c')
     .then(response => JSON.parse(response.data.body))
     .then(image => {
-        // let markup = `<picture class="center pic"><source type="image/webp" class="picture" srcset="https://s3-us-west-1.amazonaws.com/18a58t9c/webp/${image._id}.webp"><img class="picture" alt="${image.original}" src="https://s3-us-west-1.amazonaws.com/18a58t9c/jpg/${image._id}.jpg"></picture>`;
+        let markup = `<picture class="center pic"><source type="image/webp" class="picture" srcset="https://s3-us-west-1.amazonaws.com/18a58t9c/webp/${image._id}.webp"><img class="picture" alt="${image.original}" src="https://s3-us-west-1.amazonaws.com/18a58t9c/jpg/${image._id}.jpg"></picture>`;
         let contrast = invert(image.color, true);
 
         let links = document.getElementsByTagName('a')
@@ -15,7 +15,7 @@ axios.get('https://kboykyzml8.execute-api.us-west-2.amazonaws.com/prod/get-rando
 
         document.body.style.background = image.color;
         document.body.style.color = contrast;
-        // document.getElementById('image-box').innerHTML = markup;
+        document.getElementById('image-box').innerHTML = markup;
     })
     .catch(err => console.log(err))
 
