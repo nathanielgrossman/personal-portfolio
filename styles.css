@@ -20,6 +20,11 @@ h3 {
 
 a {
     transition: color .5s linear;
+    color: black;
+}
+
+a:hover {
+    color: blue;
 }
 
 .center {
